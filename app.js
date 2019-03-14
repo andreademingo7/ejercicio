@@ -92,11 +92,11 @@ function comprobar(){
     "Agosto","Septiembre","Octubre","Noviembre","Diciembre");
     var f=new Date();
     document.getElementById("peliculas").innerHTML = "<h1>Informacion</h1></br>";
-    document.getElementById("peliculas").innerHTML +="<p>La ultima sesion iniciada por "+
+    document.getElementById("peliculas").innerHTML ="<p>La ultima sesion iniciada por "+
     usuario+" fue: "+f.getDate() + " de  " + meses[f.getMonth()] + " de " + 
-    f.getFullYear()+"</p></br>"+"<form name=nuevo  method=post><input type= submit"+
-    "value=Favoritos name = favoritos name=otro onclick=verFavoritos()><input type=submit "+
-    "value=return name=return onclick=return()></form>";
+    f.getFullYear()+"</p></br><form name=nuevo  method=post>"+
+    "<input type=submit value=Favoritos name = favoritos name=otro onclick=verFavoritos()>"+
+    "<input type=submit value=return name=return onclick=return()></form>";
 
     } else{ 
 
